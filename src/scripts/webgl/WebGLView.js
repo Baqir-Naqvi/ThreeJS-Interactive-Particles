@@ -1,10 +1,6 @@
 import 'three';
-import { TweenLite } from 'gsap/TweenMax';
-
 import InteractiveControls from './controls/InteractiveControls';
 import Particles from './particles/Particles';
-
-import glslify from 'glslify';
 
 export default class WebGLView {
 
