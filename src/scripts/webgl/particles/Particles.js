@@ -191,20 +191,18 @@ export default class Particles {
 
   show(time = 1.0) {
     // reset
-    gsap.to(
-      this.object3D.material.uniforms.uSize,
-      { value: 0.5, duration: time },
-      { value: 1.5, duration: time }
-    );
+    gsap.to(this.object3D.material.uniforms.uSize, {
+      value: 0.83,
+      duration: time,
+    });
     gsap.to(this.object3D.material.uniforms.uRandom, {
       duration: time,
       value: 2.0,
     });
-    gsap.to(
-      this.object3D.material.uniforms.uDepth,
-      { value: 40.0, duration: time * 1.5 },
-      { value: 4.0, duration: time * 1.5 }
-    );
+    gsap.to(this.object3D.material.uniforms.uDepth, {
+      value: 4.0,
+      duration: time * 1.5,
+    });
 
     this.addListeners();
   }
