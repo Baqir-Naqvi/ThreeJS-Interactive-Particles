@@ -11,6 +11,7 @@ A tutorial demonstrating how to draw a large number of particles with Three.js a
 
 ## Run
 - Install `npm install`
+- Navigate to 'src folder' (cd src)
 - Run `npm start`
 - Build `npm run build`
 
